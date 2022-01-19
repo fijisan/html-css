@@ -46,8 +46,8 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: lightgrey;
-  transition: 0.3s;
+  color: rgb(231, 168, 31);
+  transition: 0.5s;
 }
 
 section {
@@ -67,18 +67,36 @@ section.normal {
 section.imagem {
   background-color: rgb(135, 190, 222);
   color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+section#imagem1 {
+  background-image: url('../imagens/background001.jpg');
+  background-position: right center;  
+}
+
+section#imagem2 {
+  background-image: url('../imagens/background002.jpg');
+  background-position: right center;
 }
 
 section.imagem > p {
-  background-color: rgba(0, 0, 0, 0.137);
+  background-color: rgba(0, 0, 0, 0.233);
   display: inline-block;
   padding: 5px;
   border-radius: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+
+}
+
+section > p {
+  padding-bottom: 2em;
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(12, 65, 7);
   color: white;
   text-align: center;
   padding: 10px;
@@ -96,5 +114,12 @@ footer {
 
   section {
     font-size: 1em;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    text-align: left;
+    padding-left: 30px;
   }
 }
