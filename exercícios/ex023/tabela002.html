@@ -17,6 +17,7 @@
     }
 
     table {
+      position: relative;
       width: 400px;
       padding: 10px;
       border-collapse: collapse;
@@ -42,8 +43,18 @@
       color: white;
     }
 
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: rgb(21, 33, 194);
+    }
+
     .nmr {
       text-align: right;
+    }
+
+    tbody > tr:nth-child(odd) {
+      background-color: lightgray;
     }
 
     tfoot {
